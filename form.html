@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+
+  <body>
+    <h1>Applicaton Survey</h1>
+    <form>
+      
+      <label>first name </label><br />
+      <input type="text" id="firstname" placeholder="john" autofocus required/><br />
+      <label>Last name </label><br />
+      <input type="text" id="lastname" /><br /><hr>
+      <fieldset>
+        <legend>choose your stack</legend>
+      <label for="frontend">front -end</label>
+      <input type="checkbox" id="frontstack" name="frontend" /><br />
+      <label for="backend">Back end </label>
+      <input type="checkbox" id="backstack" name="backend" /><br />
+      
+      </fieldset>
+        <fieldset>
+        <legend>choose your gender</legend>
+      
+
+      
+        <input type="radio" id="gender" name="gender" value="male" />Male<br />
+      
+      
+        <input
+          type="radio"
+          id="gender"
+          name="gender"
+          value="female"
+        />Female
+          
+        </fieldset>
+      </div>
+      <div>
+        <label> select your programming language</label><br>
+        <select>
+         
+           <option value="java">java</option>
+            <option value="c++">c++</option>
+             <option value="javascript">java script</option>
+              <option value="php">PHP</option>
+               <option value="rust">rust</option>
+               <option value="phyton">Phyton</option>
+        </select>
+      </div>
+      <hr>
+      <div>
+        <label>choose your file in png,jpg,jpeg</label><br>
+        <input type="file" id="cv" name="cv" accept="image/png,image/jpeg,image/jpg"/>
+      </div>
+      <button type="submit">Submit</button><br>
+      <input type="submit" value="send request"><br>
+      <input type="reset" value="reset password">
+    </form>
+  </body>
+</html>
