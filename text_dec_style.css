@@ -1,0 +1,57 @@
+body {
+    background-color: snow;
+  }
+  nav {
+    background-color: aqua;
+  }
+  .main {
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 70vh;
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    overflow-y: scroll;
+  }
+  h1 {
+    background-color: red;
+    margin-top: 0;
+    color: black;
+    
+  }
+  a{
+      text-decoration: none;
+      font-style: normal;
+  }
+  p{
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  h4, p{
+      color: pink;
+  }
+  p{
+      color: #a05353 !important;
+  }
+  .wrapper{
+      display: flex;
+  }
+  .section-main{
+      flex: 3;
+  }
+  .plant{
+      width: 200px;
+      height: auto;
+      float: left;
+      shape-outside: circle()margin-box;
+      shape-margin: 80px;
+  
+  }
+  section > p{
+      font-weight: 700;
+  }
