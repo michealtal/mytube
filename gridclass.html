@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-column-gap: 30px;
+            grid-row-gap:20px ;
+        }
+        .title{
+            grid-column: 1;
+            grid-row: 1;
+            background-color: aqua;
+        }
+        .score{
+            grid-column: 1;
+            grid-row: 3;
+            background-color: rgb(255, 0, 157);
+        }
+        .stats{
+            grid-column: 1;
+            grid-row: 2;
+            align-self: center;
+            background-color: rgb(255, 115, 0);
+        }
+        .board{
+            grid-column:2 ;
+            grid-row: 1/span 2;
+            background-color: blue;
+        }
+        .controls{
+            grid-column: 2;
+            grid-row: 3;
+            justify-self: center;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="title">Game Tit</div>
+        <div class="score"> Score</div>
+        <div class="stats"> stats</div>
+        <div class="board">Board</div>
+        <div class="controls">Controls</div>
+    </div>
+</body>
+</html>

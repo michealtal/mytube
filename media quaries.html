@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quaries</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva,;
+            padding: 20px;
+            color: snow;
+        }
+    </style>
+</head>
+<body>
+  <h1>Doing media Quaries useing matchMedia</h1>
+  <h2>Changing colours from green to orange based on the screen size</h2>  
+  <script>
+    var mediaQuery = window.matchMedia("(max-width: 700px)");
+    function switchColor(mediaQuery) {
+        if (mediaQuery.matches){
+            document.body.style.backgroundColor = "green";
+        }else{
+            document.body.style.backgroundColor = "orange";  
+        }
+    }
+    switchColor(mediaQuery);
+    mediaQuery.addListener(switchColor);
+  </script>
+</body>
+</html>

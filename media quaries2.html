@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile first  app</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva,;
+            padding: 20px;
+            
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        p.sub-text {
+            border:2px solid black;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        img{
+            width:300px;
+        }
+        /* media query in action */
+        @media screen and (min-width: 700px){
+          .container {
+            flex-direction:row;
+            align-items:center;
+            column-width:200px;
+            justify-content:space-evenly;
+            column-gap: 10px;
+
+          }
+          p.sub-text{
+            border:2px solid #d7d7;
+            padding:30px;
+          }
+          img{
+            width:200px;
+          }
+        }
+            
+            
+        
+    </style>
+</head>
+<body>
+    <center>
+    <h2>useing media queries in a mobile-first approach </h2>
+    <p>the following page will adjust itself for different</p>
+    <div class="container">
+        <img src="asset/images/circle.jpg" alt="main image">
+       <p class="sub-text">
+        this is the inner text for mobile first.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+            dolores soluta quod asperiores est dignissimos laudantium quisquam
+            perspiciatis omnis? Natus. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Repudiandae provident voluptates exercitationem
+            dolor deleniti ipsa quisquam odit officiis distinctio nulla!. Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Officiis odit
+            quas numquam itaque ab. Beatae exercitationem dicta dolore ad sequi
+            obcaecati doloremque reprehenderit fuga tempore totam eos error hic
+            amet natus, aut quam. Vel laborum vero laudantium laboriosam
+            voluptatum reiciendis nemo beatae quidem consequatur blanditiis
+            corrupti aliquam repudiandae, itaque iure 
+       </p>
+    </div>
+</center>
+  <h1>Doing media Quaries useing matchMedia</h1>
+  <h2>Changing colours from green to orange based on the screen size</h2>
+    
+  
+</body>
+</html>
